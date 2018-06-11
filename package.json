@@ -1,17 +1,24 @@
 {
-  "name": "node-quickfix",
-  "version": "2.1.1",
+  "name": "@omniex/node-quickfix",
+  "version": "2.1.104",
   "scripts": {
     "configure": "node-gyp configure",
     "build": "node-gyp build",
+    "install": "node-pre-gyp install --fallback-to-build",
     "test": "mocha"
   },
   "main": "index.js",
-  "description": "This is a wrapper for the Quickfix C++ library to be used within node.js applications",
+  "description": "This is a fork of node-quickfix, a wrapper for the Quickfix C++ library to be used within node.js applications",
   "author": {
     "name": "Kermen Deol",
     "email": "kermen.deol@electronifie.com"
   },
+  "contributors": [
+    {
+      "name": "Nestor Toro",
+      "email": "npm@omniex.io"
+    }
+  ],
   "devDependencies": {
     "dateformat": "^3.0.2",
     "mocha": "^2.2.5",
@@ -21,9 +28,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/electronifie/node-quickfix"
+    "url": "https://github.com/omni3x/node-quickfix"
   },
   "dependencies": {
-    "bindings": "^1.3.0"
-  }
+    "bindings": "^1.3.0",
+    "node-pre-gyp": "0.9.0"
+  },
+  "bundledDependencies": [
+    "node-pre-gyp"
+  ],
+  "binary": {
+    "module_name": "NodeQuickfix",
+    "module_path": "./bindings/{platform}-{arch}",
+    "host": ""
+  },
+  "files": [
+    "index.js",
+    "bindings"
+  ]
 }
