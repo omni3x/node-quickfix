@@ -1,10 +1,11 @@
 {
   "name": "@omniex/node-quickfix",
-  "version": "2.1.104",
+  "version": "2.1.108",
   "scripts": {
     "configure": "node-gyp configure",
     "build": "node-gyp build",
     "install": "node-pre-gyp install --fallback-to-build",
+    "postinstall": "node scripts/npm-run/postinstall.js",
     "test": "mocha"
   },
   "main": "index.js",
@@ -44,6 +45,8 @@
   },
   "files": [
     "index.js",
-    "bindings"
+    "bindings",
+    "lib",
+    "scripts/npm-run"
   ]
 }
