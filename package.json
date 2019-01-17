@@ -1,6 +1,6 @@
 {
   "name": "@omniex/node-quickfix",
-  "version": "2.1.109",
+  "version": "2.1.110",
   "scripts": {
     "configure": "node-gyp configure",
     "build": "node-gyp build",
