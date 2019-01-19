@@ -2,8 +2,9 @@
   "name": "@omniex/node-quickfix",
   "version": "2.1.111",
   "scripts": {
-    "configure": "node-gyp configure",
-    "build": "node-gyp build",
+    "clean": "node-pre-gyp clean",
+    "configure": "node-pre-gyp configure",
+    "build": "node-pre-gyp build",
     "install": "node-pre-gyp install --fallback-to-build",
     "postinstall": "node scripts/npm-run/postinstall.js",
     "test": "mocha"
@@ -24,7 +25,6 @@
     "dateformat": "^3.0.2",
     "mocha": "^5.2.0",
     "nan": "^2.8.0",
-    "node-gyp": "^3.6.2",
     "should": "^13.2.1"
   },
   "repository": {

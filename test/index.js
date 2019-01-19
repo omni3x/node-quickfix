@@ -1,80 +1,105 @@
-var events = require('events');
-var quickfix = require('../index.js');
-var path = require('path');
-var should = require('should');
+var events = require("events");
+var quickfix = require("../index.js");
+var path = require("path");
+var should = require("should");
 
-var acceptorPropertiesFile = path.resolve(path.join(__dirname, 'support', 'acceptor.properties'));
-var initiatorPropertiesFile = path.resolve(path.join(__dirname, 'support', 'initiator.properties'));
+var acceptorPropertiesFile = path.resolve(
+  path.join(__dirname, "support", "acceptor.properties")
+);
+var initiatorPropertiesFile = path.resolve(
+  path.join(__dirname, "support", "initiator.properties")
+);
 
-describe('initiator', function () {
+describe("initiator", function() {
+  this.timeout(5000);
 
- this.timeout(5000);
-
- it('should throw if not supplied options', function () {
-   (function () { new quickfix.initiator(); }).should.throw('FixInitiator requires an options parameter');
- });
-
- it('should throw if supplied options with no settings or propertiesFile', function () {
-   (function () { new quickfix.initiator({}, {}); }).should.throw('you must provide FixInitiator either an options.settings string or options.propertiesFile path to a properties file');
- });
-
- it('should create a new initiator instance with fix beginString, senderCompID, targetCompID on defined session', function () {
-   var initiator = new quickfix.initiator({}, {
-     propertiesFile: initiatorPropertiesFile
-    });
-   initiator.should.not.eql(null);
-   initiator.isLoggedOn().should.eql(false);
-   initiator.getSessions()[0].beginString.should.eql('FIX.4.4');
-   initiator.getSessions()[0].senderCompID.should.eql('SenderCompID');
-   initiator.getSessions()[0].targetCompID.should.eql('TargetCompID');
- });
-
- it('should start and stop when called', function (done) {
-   var initiator = new quickfix.initiator({}, {
-     propertiesFile: initiatorPropertiesFile
-   });
-   initiator.start(function () {
-     // todo: started with local property
-     initiator.stop(function () {
-        // todo: started with local property
-       done();
-      });
-    });
- });
-
-});
-
-describe('acceptor', function () {
-
- this.timeout(5000);
-
- it('should throw if not supplied options', function () {
-   (function () { quickfix.acceptor(); }).should.throw('FixAcceptor requires an options parameter');
+  it("should throw if not supplied options", function() {
+    (function() {
+      new quickfix.initiator();
+    }.should.throw("FixInitiator requires an options parameter"));
   });
 
- it('should throw if supplied options with no settings or propertiesFile', function () {
-   (function () { quickfix.acceptor({}, {}); }).should.throw('you must provide FixAcceptor either an options.settings string or options.propertiesFile path to a properties file');
- });
+  it("should throw if supplied options with no settings or propertiesFile", function() {
+    (function() {
+      new quickfix.initiator({}, {});
+    }.should.throw(
+      "you must provide FixInitiator either an options.settings string or options.propertiesFile path to a properties file"
+    ));
+  });
 
- it('should create a new acceptor instance with fix beginString, senderCompID, targetCompID on defined session', function () {
-   var acceptor = new quickfix.acceptor({}, {
-     propertiesFile: acceptorPropertiesFile
-    });
-   acceptor.should.not.eql(null);
-   acceptor.getSessions()[0].beginString.should.eql('FIX.4.4');
-   acceptor.getSessions()[0].senderCompID.should.eql('TargetCompID');
-   acceptor.getSessions()[0].targetCompID.should.eql('SenderCompID');
- });
+  it("should create a new initiator instance with fix beginString, senderCompID, targetCompID on defined session", function() {
+    var initiator = new quickfix.initiator(
+      {},
+      {
+        propertiesFile: initiatorPropertiesFile
+      }
+    );
+    initiator.should.not.eql(null);
+    initiator.isLoggedOn().should.eql(false);
+    initiator.getSessions()[0].beginString.should.eql("FIX.4.4");
+    initiator.getSessions()[0].senderCompID.should.eql("SenderCompID");
+    initiator.getSessions()[0].targetCompID.should.eql("TargetCompID");
+  });
 
- it('should start and stop when called', function (done) {
-   var acceptor = new quickfix.acceptor({}, {
-     propertiesFile: acceptorPropertiesFile
-    });
-   acceptor.start(function () {
-     // todo: started with local property
-     acceptor.stop(function () {
+  it("should start and stop when called", function(done) {
+    var initiator = new quickfix.initiator(
+      {},
+      {
+        propertiesFile: initiatorPropertiesFile
+      }
+    );
+    initiator.start(function() {
+      // todo: started with local property
+      initiator.stop(function() {
         // todo: started with local property
-       done();
+        done();
+      });
+    });
+  });
+});
+
+describe("acceptor", function() {
+  this.timeout(5000);
+
+  it("should throw if not supplied options", function() {
+    (function() {
+      quickfix.acceptor();
+    }.should.throw("FixAcceptor requires an options parameter"));
+  });
+
+  it("should throw if supplied options with no settings or propertiesFile", function() {
+    (function() {
+      quickfix.acceptor({}, {});
+    }.should.throw(
+      "you must provide FixAcceptor either an options.settings string or options.propertiesFile path to a properties file"
+    ));
+  });
+
+  it("should create a new acceptor instance with fix beginString, senderCompID, targetCompID on defined session", function() {
+    var acceptor = new quickfix.acceptor(
+      {},
+      {
+        propertiesFile: acceptorPropertiesFile
+      }
+    );
+    acceptor.should.not.eql(null);
+    acceptor.getSessions()[0].beginString.should.eql("FIX.4.4");
+    acceptor.getSessions()[0].senderCompID.should.eql("TargetCompID");
+    acceptor.getSessions()[0].targetCompID.should.eql("SenderCompID");
+  });
+
+  it("should start and stop when called", function(done) {
+    var acceptor = new quickfix.acceptor(
+      {},
+      {
+        propertiesFile: acceptorPropertiesFile
+      }
+    );
+    acceptor.start(function() {
+      // todo: started with local property
+      acceptor.stop(function() {
+        // todo: started with local property
+        done();
       });
     });
   });
