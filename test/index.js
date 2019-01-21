@@ -11,7 +11,7 @@ var initiatorPropertiesFile = path.resolve(
 );
 
 describe("initiator", function() {
-  this.timeout(5000);
+  this.timeout(10000);
 
   it("should throw if not supplied options", function() {
     (function() {
@@ -59,7 +59,7 @@ describe("initiator", function() {
 });
 
 describe("acceptor", function() {
-  this.timeout(5000);
+  this.timeout(10000);
 
   it("should throw if not supplied options", function() {
     (function() {

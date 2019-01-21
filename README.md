@@ -16,6 +16,15 @@ NOTE: If your application requires SSL support, use the QuickFIX fork here: http
 4. After installing copy "config.h" from the install directory to your include directory (usually /usr/local/include/quickfix)
 5. Include this module in your package.json file.
 
+###Building###
+```
+npm install --build-from-source # Install dependencies and dispatch to node-gyp
+
+npm postinstall # Run post-installation script to copy libraries to the appropriate directories
+
+npm test # Run unit tests
+```
+
 ###Features######
 
 This module currently supports creating an Acceptor, an Initiator, and retrieving individual Sessions.
