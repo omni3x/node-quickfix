@@ -20,6 +20,19 @@ NOTE: If your application requires SSL support, use the QuickFIX fork here: http
 ```
 npm install --build-from-source # Install dependencies and dispatch to node-gyp
 
+# Check that libcrypto and libssl can be found. In my case, these two binaries had to be symlinked.
+# Check dependencies from generated NodeQuickfix
+ldd bindings/linux-x64/NodeQuickfix.Node
+
+# Check for the libssl and libcrypto entries. If they look like the following:
+# libssl.so.1.1 => not found, then the libraries will need to be symlinked.
+
+ln -s /usr/lib64/libcrypto.so.1.1 /usr/lib64/libcrypto.so
+ln -s /usr/lib64/libssl.so /usr/lib64/libssl.so.1.1
+
+# Reload ldconfig cache
+sudo ldconfig
+
 npm run test # Run unit tests
 ```
 
