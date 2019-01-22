@@ -40,6 +40,7 @@
         'libraries': [
           '-L/usr/lib',
           '-L/usr/local/lib',
+          '-L/usr/lib64',
           '-lquickfix',
           '-lpthread',
           '-lxml2',
@@ -49,7 +50,9 @@
       'include_dirs': [
         "<!(node -e \"require('nan')\")",
         '/usr/local/include',
-        '/usr/local/include/quickfix'
+        '/usr/local/include/quickfix',
+        '/usr/include',
+        '/usr/include/quickfix'
       ],
       'direct_dependent_settings': {
         'include_dirs': ['src']

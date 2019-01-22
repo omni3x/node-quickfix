@@ -20,9 +20,7 @@ NOTE: If your application requires SSL support, use the QuickFIX fork here: http
 ```
 npm install --build-from-source # Install dependencies and dispatch to node-gyp
 
-npm postinstall # Run post-installation script to copy libraries to the appropriate directories
-
-npm test # Run unit tests
+npm run test # Run unit tests
 ```
 
 ###Features######
