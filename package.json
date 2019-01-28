@@ -1,6 +1,6 @@
 {
   "name": "@omniex/node-quickfix",
-  "version": "2.1.121",
+  "version": "2.1.125",
   "scripts": {
     "configure": "node-gyp configure",
     "install": "node-pre-gyp install --fallback-to-build",
@@ -23,7 +23,7 @@
     "dateformat": "^3.0.2",
     "mocha": "^5.2.0",
     "nan": "^2.8.0",
-    "node-gyp": "3.8.0",
+    "node-gyp": "^3.6.2",
     "should": "^13.2.1"
   },
   "repository": {

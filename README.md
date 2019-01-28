@@ -16,26 +16,6 @@ NOTE: If your application requires SSL support, use the QuickFIX fork here: http
 4. After installing copy "config.h" from the install directory to your include directory (usually /usr/local/include/quickfix)
 5. Include this module in your package.json file.
 
-###Building###
-```
-npm install --build-from-source # Install dependencies and dispatch to node-gyp
-
-# Check that libcrypto and libssl can be found. In my case, these two binaries had to be symlinked.
-# Check dependencies from generated NodeQuickfix
-ldd bindings/linux-x64/NodeQuickfix.Node
-
-# Check for the libssl and libcrypto entries. If they look like the following:
-# libssl.so.1.1 => not found, then the libraries will need to be symlinked.
-
-ln -s /usr/lib64/libcrypto.so.1.1 /usr/lib64/libcrypto.so
-ln -s /usr/lib64/libssl.so /usr/lib64/libssl.so.1.1
-
-# Reload ldconfig cache
-sudo ldconfig
-
-npm run test # Run unit tests
-```
-
 ###Features######
 
 This module currently supports creating an Acceptor, an Initiator, and retrieving individual Sessions.
