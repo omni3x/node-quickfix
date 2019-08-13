@@ -1,0 +1,322 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+11	examples/initiator.js	/^      11: "0E0Z86K00000",$/;"	P
+218	examples/initiator.js	/^      218: 100,$/;"	P
+22	examples/initiator.js	/^      22: 1,$/;"	P
+35	examples/initiator.js	/^      35: 'D',$/;"	P
+38	examples/initiator.js	/^      38: 200,$/;"	P
+40	examples/initiator.js	/^      40: 2,$/;"	P
+423	examples/initiator.js	/^      423: 6$/;"	P
+48	examples/initiator.js	/^      48: "06051GDX4",$/;"	P
+49	examples/initiator.js	/^      49: "INITIATOR",$/;"	P
+54	examples/initiator.js	/^      54: 1,$/;"	P
+55	examples/initiator.js	/^      55: 'BAC',$/;"	P
+56	examples/initiator.js	/^      56: "ACCEPTOR"$/;"	P
+60	examples/initiator.js	/^      60: df(new Date(), "yyyymmdd-HH:MM:ss.l"),$/;"	P
+8	examples/initiator.js	/^      8: 'FIX.4.4',$/;"	P
+APPLICATION_H	src/FixApplication.h	2;"	d
+Aggregator	quickfix/spec/Aggregator.rb	/^class Aggregator$/;"	c
+DISPATCHER_H_	src/Dispatcher.h	9;"	d
+Dispatcher	src/Dispatcher.h	/^    Dispatcher() {$/;"	f	class:Dispatcher
+Dispatcher	src/Dispatcher.h	/^class Dispatcher {$/;"	c
+Execute	src/FixAcceptorStartWorker.cpp	/^void FixAcceptorStartWorker::Execute () {$/;"	f	class:FixAcceptorStartWorker
+Execute	src/FixAcceptorStopWorker.cpp	/^void FixAcceptorStopWorker::Execute () {$/;"	f	class:FixAcceptorStopWorker
+Execute	src/FixInitiatorStartWorker.cpp	/^void FixInitiatorStartWorker::Execute () {$/;"	f	class:FixInitiatorStartWorker
+Execute	src/FixInitiatorStopWorker.cpp	/^void FixInitiatorStopWorker::Execute () {$/;"	f	class:FixInitiatorStopWorker
+Execute	src/FixSendWorker.cpp	/^void FixSendWorker::Execute () {$/;"	f	class:FixSendWorker
+Execute	src/FixSession.cpp	/^		void Execute () {$/;"	f	class:FixSessionDisconnectWorker
+Execute	src/FixSession.cpp	/^		void Execute () {$/;"	f	class:FixSessionLogonWorker
+Execute	src/FixSession.cpp	/^		void Execute () {$/;"	f	class:FixSessionLogoutWorker
+Execute	src/FixSession.cpp	/^		void Execute () {$/;"	f	class:FixSessionRefreshWorker
+Execute	src/FixSession.cpp	/^		void Execute () {$/;"	f	class:FixSessionResetWorker
+FIXACCEPTORSTARTWORKER_H_	src/FixAcceptorStartWorker.h	3;"	d
+FIXACCEPTORSTOPWORKER_H_	src/FixAcceptorStopWorker.h	3;"	d
+FIXACCEPTOR_H_	src/FixAcceptor.h	9;"	d
+FIXCONNECTION_H_	src/FixConnection.h	9;"	d
+FIXCREDENTIALS_H_	src/FixCredentials.h	9;"	d
+FIXEVENT_H_	src/FixEvent.h	9;"	d
+FIXINITIATOR_H	src/FixInitiator.h	2;"	d
+FIXLOGINPROVIDER_H_	src/FixLoginProvider.h	9;"	d
+FIXLOGINRESPONSE_H_	src/FixLoginResponse.h	9;"	d
+FIXMESSAGEUTIL_H_	src/FixMessageUtil.h	9;"	d
+FIXSENDWORKER_H_	src/FixSendWorker.h	3;"	d
+FIXSESSION_H_	src/FixSession.h	9;"	d
+FIXSTARTWORKER_H_	src/FixInitiatorStartWorker.h	3;"	d
+FIXSTOPWORKER_H_	src/FixInitiatorStopWorker.h	3;"	d
+FixAcceptor	src/FixAcceptor.cpp	/^FixAcceptor::FixAcceptor(FIX::SessionSettings settings, std::string storeFactory, bool ssl): FixConnection(settings, storeFactory) {$/;"	f	class:FixAcceptor
+FixAcceptor	src/FixAcceptor.cpp	/^FixAcceptor::FixAcceptor(FixApplication* application, FIX::SessionSettings settings, std::string storeFactory, bool ssl): FixConnection(application, settings, storeFactory) {$/;"	f	class:FixAcceptor
+FixAcceptor	src/FixAcceptor.h	/^class FixAcceptor : public FixConnection {$/;"	c
+FixAcceptorStartWorker	src/FixAcceptorStartWorker.h	/^		FixAcceptorStartWorker(Nan::Callback *callback, FIX::Acceptor* acceptor)$/;"	f	class:FixAcceptorStartWorker
+FixAcceptorStartWorker	src/FixAcceptorStartWorker.h	/^class FixAcceptorStartWorker : public Nan::AsyncWorker$/;"	c
+FixAcceptorStopWorker	src/FixAcceptorStopWorker.h	/^		FixAcceptorStopWorker(Nan::Callback *callback, FIX::Acceptor* acceptor)$/;"	f	class:FixAcceptorStopWorker
+FixAcceptorStopWorker	src/FixAcceptorStopWorker.h	/^class FixAcceptorStopWorker : public Nan::AsyncWorker$/;"	c
+FixApplication	src/FixApplication.cpp	/^FixApplication::FixApplication() {}$/;"	f	class:FixApplication
+FixApplication	src/FixApplication.cpp	/^FixApplication::FixApplication(Nan::Persistent<v8::Object>* callbacks, std::unordered_set<std::string>* callbackRegistry)$/;"	f	class:FixApplication
+FixApplication	src/FixApplication.h	/^class FixApplication : public FIX::Application$/;"	c
+FixConnection	src/FixConnection.cpp	/^FixConnection::FixConnection(FIX::SessionSettings settings, std::string storeFactory): Nan::ObjectWrap()  {$/;"	f	class:FixConnection
+FixConnection	src/FixConnection.cpp	/^FixConnection::FixConnection(FixApplication* application, FIX::SessionSettings settings, std::string storeFactory): Nan::ObjectWrap()  {$/;"	f	class:FixConnection
+FixConnection	src/FixConnection.h	/^class FixConnection : public Nan::ObjectWrap {$/;"	c
+FixInitiator	src/FixInitiator.cpp	/^FixInitiator::FixInitiator(FIX::SessionSettings settings, std::string storeFactory, bool ssl): FixConnection(settings, storeFactory) {$/;"	f	class:FixInitiator
+FixInitiator	src/FixInitiator.h	/^class FixInitiator : public FixConnection {$/;"	c
+FixInitiatorStartWorker	src/FixInitiatorStartWorker.h	/^		FixInitiatorStartWorker(Nan::Callback *callback, FIX::Initiator* initiator)$/;"	f	class:FixInitiatorStartWorker
+FixInitiatorStartWorker	src/FixInitiatorStartWorker.h	/^class FixInitiatorStartWorker : public Nan::AsyncWorker$/;"	c
+FixInitiatorStopWorker	src/FixInitiatorStopWorker.h	/^		FixInitiatorStopWorker(Nan::Callback *callback, FIX::Initiator* initiator)$/;"	f	class:FixInitiatorStopWorker
+FixInitiatorStopWorker	src/FixInitiatorStopWorker.h	/^class FixInitiatorStopWorker : public Nan::AsyncWorker$/;"	c
+FixLoginProvider	src/FixLoginProvider.h	/^class FixLoginProvider : public Nan::ObjectWrap {$/;"	c
+FixLoginResponse	src/FixLoginResponse.cpp	/^FixLoginResponse::FixLoginResponse() : Nan::ObjectWrap(){$/;"	f	class:FixLoginResponse
+FixLoginResponse	src/FixLoginResponse.h	/^class FixLoginResponse : public Nan::ObjectWrap {$/;"	c
+FixMessageUtil	src/FixMessageUtil.h	/^class FixMessageUtil {$/;"	c
+FixSendWorker	src/FixSendWorker.h	/^		FixSendWorker(Nan::Callback *callback, FIX::Message* message)$/;"	f	class:FixSendWorker
+FixSendWorker	src/FixSendWorker.h	/^class FixSendWorker : public Nan::AsyncWorker$/;"	c
+FixSession	src/FixSession.cpp	/^FixSession::FixSession() : Nan::ObjectWrap() {$/;"	f	class:FixSession
+FixSession	src/FixSession.h	/^class FixSession : public Nan::ObjectWrap {$/;"	c
+FixSessionAsyncWorker	src/FixSession.cpp	/^		FixSessionAsyncWorker(Nan::Callback *callback, FIX::Session* session)$/;"	f	class:FixSessionAsyncWorker
+FixSessionAsyncWorker	src/FixSession.cpp	/^class FixSessionAsyncWorker : public Nan::AsyncWorker {$/;"	c	file:
+FixSessionDisconnectWorker	src/FixSession.cpp	/^		FixSessionDisconnectWorker(Nan::Callback *callback, FIX::Session* session)$/;"	f	class:FixSessionDisconnectWorker
+FixSessionDisconnectWorker	src/FixSession.cpp	/^class FixSessionDisconnectWorker : public FixSessionAsyncWorker {$/;"	c	file:
+FixSessionLogonWorker	src/FixSession.cpp	/^		FixSessionLogonWorker(Nan::Callback *callback, FIX::Session* session)$/;"	f	class:FixSessionLogonWorker
+FixSessionLogonWorker	src/FixSession.cpp	/^class FixSessionLogonWorker : public FixSessionAsyncWorker {$/;"	c	file:
+FixSessionLogoutWorker	src/FixSession.cpp	/^		FixSessionLogoutWorker(Nan::Callback *callback, FIX::Session* session)$/;"	f	class:FixSessionLogoutWorker
+FixSessionLogoutWorker	src/FixSession.cpp	/^class FixSessionLogoutWorker : public FixSessionAsyncWorker {$/;"	c	file:
+FixSessionRefreshWorker	src/FixSession.cpp	/^		FixSessionRefreshWorker(Nan::Callback *callback, FIX::Session* session)$/;"	f	class:FixSessionRefreshWorker
+FixSessionRefreshWorker	src/FixSession.cpp	/^class FixSessionRefreshWorker : public FixSessionAsyncWorker {$/;"	c	file:
+FixSessionResetWorker	src/FixSession.cpp	/^		FixSessionResetWorker(Nan::Callback *callback, FIX::Session* session)$/;"	f	class:FixSessionResetWorker
+FixSessionResetWorker	src/FixSession.cpp	/^class FixSessionResetWorker : public FixSessionAsyncWorker {$/;"	c	file:
+HandleOKCallback	src/FixAcceptorStartWorker.cpp	/^void FixAcceptorStartWorker::HandleOKCallback () {$/;"	f	class:FixAcceptorStartWorker
+HandleOKCallback	src/FixAcceptorStopWorker.cpp	/^void FixAcceptorStopWorker::HandleOKCallback () {$/;"	f	class:FixAcceptorStopWorker
+HandleOKCallback	src/FixInitiatorStartWorker.cpp	/^void FixInitiatorStartWorker::HandleOKCallback () {$/;"	f	class:FixInitiatorStartWorker
+HandleOKCallback	src/FixInitiatorStopWorker.cpp	/^void FixInitiatorStopWorker::HandleOKCallback () {$/;"	f	class:FixInitiatorStopWorker
+HandleOKCallback	src/FixSendWorker.cpp	/^void FixSendWorker::HandleOKCallback () {$/;"	f	class:FixSendWorker
+HandleOKCallback	src/FixSession.cpp	/^		void HandleOKCallback () {$/;"	f	class:FixSessionAsyncWorker
+Initialize	src/FixLoginResponse.cpp	/^void FixLoginResponse::Initialize(Handle<Object> target) {$/;"	f	class:FixLoginResponse
+Initialize	src/FixSession.cpp	/^void FixSession::Initialize() {$/;"	f	class:FixSession
+NAN_GETTER	src/FixSession.cpp	/^NAN_GETTER(FixSession::getSenderSeqNum) {$/;"	f
+NAN_GETTER	src/FixSession.cpp	/^NAN_GETTER(FixSession::getTargetSeqNum) {$/;"	f
+NAN_METHOD	src/FixAcceptor.cpp	/^NAN_METHOD(FixAcceptor::New) {$/;"	f
+NAN_METHOD	src/FixAcceptor.cpp	/^NAN_METHOD(FixAcceptor::getSession) {$/;"	f
+NAN_METHOD	src/FixAcceptor.cpp	/^NAN_METHOD(FixAcceptor::getSessions) {$/;"	f
+NAN_METHOD	src/FixAcceptor.cpp	/^NAN_METHOD(FixAcceptor::send) {$/;"	f
+NAN_METHOD	src/FixAcceptor.cpp	/^NAN_METHOD(FixAcceptor::sendRaw) {$/;"	f
+NAN_METHOD	src/FixAcceptor.cpp	/^NAN_METHOD(FixAcceptor::start) {$/;"	f
+NAN_METHOD	src/FixAcceptor.cpp	/^NAN_METHOD(FixAcceptor::stop) {$/;"	f
+NAN_METHOD	src/FixInitiator.cpp	/^NAN_METHOD(FixInitiator::New) {$/;"	f
+NAN_METHOD	src/FixInitiator.cpp	/^NAN_METHOD(FixInitiator::getSession) {$/;"	f
+NAN_METHOD	src/FixInitiator.cpp	/^NAN_METHOD(FixInitiator::getSessions) {$/;"	f
+NAN_METHOD	src/FixInitiator.cpp	/^NAN_METHOD(FixInitiator::isLoggedOn) {$/;"	f
+NAN_METHOD	src/FixInitiator.cpp	/^NAN_METHOD(FixInitiator::send) {$/;"	f
+NAN_METHOD	src/FixInitiator.cpp	/^NAN_METHOD(FixInitiator::sendRaw) {$/;"	f
+NAN_METHOD	src/FixInitiator.cpp	/^NAN_METHOD(FixInitiator::start) {$/;"	f
+NAN_METHOD	src/FixInitiator.cpp	/^NAN_METHOD(FixInitiator::stop) {$/;"	f
+NAN_METHOD	src/FixLoginProvider.cpp	/^NAN_METHOD(FixLoginProvider::New) {$/;"	f
+NAN_METHOD	src/FixLoginResponse.cpp	/^NAN_METHOD(FixLoginResponse::New) {$/;"	f
+NAN_METHOD	src/FixLoginResponse.cpp	/^NAN_METHOD(FixLoginResponse::done) {$/;"	f
+NAN_METHOD	src/FixSession.cpp	/^NAN_METHOD(FixSession::New) {$/;"	f
+NAN_METHOD	src/FixSession.cpp	/^NAN_METHOD(FixSession::disconnect) {$/;"	f
+NAN_METHOD	src/FixSession.cpp	/^NAN_METHOD(FixSession::getSessionID) {$/;"	f
+NAN_METHOD	src/FixSession.cpp	/^NAN_METHOD(FixSession::isEnabled) {$/;"	f
+NAN_METHOD	src/FixSession.cpp	/^NAN_METHOD(FixSession::isLoggedOn) {$/;"	f
+NAN_METHOD	src/FixSession.cpp	/^NAN_METHOD(FixSession::logon) {$/;"	f
+NAN_METHOD	src/FixSession.cpp	/^NAN_METHOD(FixSession::logout) {$/;"	f
+NAN_METHOD	src/FixSession.cpp	/^NAN_METHOD(FixSession::refresh) {$/;"	f
+NAN_METHOD	src/FixSession.cpp	/^NAN_METHOD(FixSession::reset) {$/;"	f
+NAN_MODULE_INIT	src/FixAcceptor.cpp	/^NAN_MODULE_INIT(FixAcceptor::Init) {$/;"	f
+NAN_MODULE_INIT	src/FixInitiator.cpp	/^NAN_MODULE_INIT(FixInitiator::Init) {$/;"	f
+NAN_MODULE_INIT	src/FixLoginProvider.cpp	/^NAN_MODULE_INIT(FixLoginProvider::Init) {$/;"	f
+NAN_MODULE_INIT	src/node_quickfix.cpp	/^NAN_MODULE_INIT(InitAll) {$/;"	f
+NAN_SETTER	src/FixSession.cpp	/^NAN_SETTER(FixSession::setSenderSeqNum) {$/;"	f
+NAN_SETTER	src/FixSession.cpp	/^NAN_SETTER(FixSession::setTargetSeqNum) {$/;"	f
+NODE_QUICKFIX_MUTEX_DESTROY	src/Threading.h	17;"	d
+NODE_QUICKFIX_MUTEX_DESTROY	src/Threading.h	31;"	d
+NODE_QUICKFIX_MUTEX_DESTROY	src/Threading.h	43;"	d
+NODE_QUICKFIX_MUTEX_INIT	src/Threading.h	11;"	d
+NODE_QUICKFIX_MUTEX_INIT	src/Threading.h	25;"	d
+NODE_QUICKFIX_MUTEX_INIT	src/Threading.h	37;"	d
+NODE_QUICKFIX_MUTEX_LOCK	src/Threading.h	13;"	d
+NODE_QUICKFIX_MUTEX_LOCK	src/Threading.h	27;"	d
+NODE_QUICKFIX_MUTEX_LOCK	src/Threading.h	39;"	d
+NODE_QUICKFIX_MUTEX_UNLOCK	src/Threading.h	15;"	d
+NODE_QUICKFIX_MUTEX_UNLOCK	src/Threading.h	29;"	d
+NODE_QUICKFIX_MUTEX_UNLOCK	src/Threading.h	41;"	d
+NODE_QUICKFIX_MUTEX_t	src/Threading.h	23;"	d
+NODE_QUICKFIX_MUTEX_t	src/Threading.h	35;"	d
+NODE_QUICKFIX_MUTEX_t	src/Threading.h	9;"	d
+NODE_QUICKFIX_THREADING_H	src/Threading.h	2;"	d
+NodeQuickfix	index.js	/^const NodeQuickfix = require(bindingPath);$/;"	V
+REPORTER	Makefile	/^REPORTER=spec$/;"	m
+acceptor	src/FixAcceptorStartWorker.h	/^		FIX::Acceptor* acceptor;$/;"	m	class:FixAcceptorStartWorker
+acceptor	src/FixAcceptorStopWorker.h	/^		FIX::Acceptor* acceptor;$/;"	m	class:FixAcceptorStopWorker
+addFixGroups	src/FixMessageUtil.h	/^	static void addFixGroups(FIX::FieldMap* map, Local<v8::Object> msg) {$/;"	f	class:FixMessageUtil
+addFixHeader	src/FixMessageUtil.h	/^	static void addFixHeader(FIX::Message* message, Local<v8::Object> msg) {$/;"	f	class:FixMessageUtil
+addFixTags	src/FixMessageUtil.h	/^	static void addFixTags(FIX::FieldMap* map, Local<v8::Object> msg) {$/;"	f	class:FixMessageUtil
+addFixTrailer	src/FixMessageUtil.h	/^	static void addFixTrailer(FIX::Message* message, Local<v8::Object> msg) {$/;"	f	class:FixMessageUtil
+addJsGroups	src/FixMessageUtil.h	/^	static void addJsGroups(Local<v8::Object> msg, const FIX::FieldMap* map) {$/;"	f	class:FixMessageUtil
+addJsHeader	src/FixMessageUtil.h	/^	static void addJsHeader(Local<v8::Object> msg, const FIX::Message* message) {$/;"	f	class:FixMessageUtil
+addJsTags	src/FixMessageUtil.h	/^	static void addJsTags(Local<v8::Object> msg, const FIX::FieldMap* map) {$/;"	f	class:FixMessageUtil
+addJsTrailer	src/FixMessageUtil.h	/^	static void addJsTrailer(Local<v8::Object> msg, const FIX::Message* message) {$/;"	f	class:FixMessageUtil
+back	quickfix/spec/Aggregator.rb	/^  def back$/;"	f	class:Aggregator
+baseMessageEnd	quickfix/spec/Aggregator.rb	/^  def baseMessageEnd$/;"	f	class:Aggregator
+baseMessageStart	quickfix/spec/Aggregator.rb	/^  def baseMessageStart$/;"	f	class:Aggregator
+binary	index.js	/^const binary = require('node-pre-gyp');$/;"	V
+bindingPath	index.js	/^const bindingPath = binary.find(libpath.resolve(__dirname, '.\/package.json'));$/;"	V
+callbacks	src/FixEvent.h	/^	Nan::Persistent<v8::Object>* callbacks;$/;"	m	struct:fix_event_t
+close	src/FixLoginResponse.cpp	/^void FixLoginResponse::close(FixLoginResponse* fixLoginResponse) {$/;"	f	class:FixLoginResponse
+common	examples/acceptor.js	/^var common = require('.\/common');$/;"	V
+common	examples/initiator.js	/^var common = require('.\/common');$/;"	V
+constructor	src/FixAcceptor.cpp	/^Nan::Persistent<Function> FixAcceptor::constructor;$/;"	m	class:FixAcceptor	file:
+constructor	src/FixAcceptor.h	/^		static Nan::Persistent<v8::Function> constructor;$/;"	m	class:FixAcceptor
+constructor	src/FixInitiator.h	/^  static Nan::Persistent<v8::Function> constructor;$/;"	m	class:FixInitiator
+constructor	src/FixLoginProvider.h	/^		static Nan::Persistent<v8::Function> constructor;$/;"	m	class:FixLoginProvider
+data	src/Dispatcher.h	/^    std::vector<fix_event_t*> data;$/;"	m	class:Dispatcher
+df	examples/initiator.js	/^var df = require('dateformat');$/;"	V
+dispatch	src/Dispatcher.h	/^    void dispatch(fix_event_t* event) {$/;"	f	class:Dispatcher
+dispatchEvent	src/FixApplication.cpp	/^void FixApplication::dispatchEvent(std::string eventName, const FIX::Message& message, const FIX::SessionID& sessionID) {$/;"	f	class:FixApplication
+dispatchEvent	src/FixApplication.cpp	/^void FixApplication::dispatchEvent(std::string eventName, const FIX::SessionID& sessionID) {$/;"	f	class:FixApplication
+eventName	src/FixEvent.h	/^	std::string eventName;$/;"	m	struct:fix_event_t
+events	examples/acceptor.js	/^var events = require('events');$/;"	V
+events	examples/initiator.js	/^var events = require('events');$/;"	V
+field	quickfix/spec/Aggregator.rb	/^  def field(name, number)$/;"	f	class:Aggregator
+fields	quickfix/spec/Aggregator.rb	/^  def fields(name, number, type, values)$/;"	f	class:Aggregator
+fieldsEnd	quickfix/spec/Aggregator.rb	/^  def fieldsEnd$/;"	f	class:Aggregator
+fieldsStart	quickfix/spec/Aggregator.rb	/^  def fieldsStart$/;"	f	class:Aggregator
+fix2Js	src/FixMessageUtil.h	/^	static void fix2Js(Local<v8::Object> msg, const FIX::Message* message) {$/;"	f	class:FixMessageUtil
+fixAcceptor	examples/acceptor.js	/^var fixAcceptor = quickfix.acceptor;$/;"	V
+fix_credentials	src/FixCredentials.h	/^} fix_credentials;$/;"	t	typeref:struct:__anon1
+fix_event_t	src/FixEvent.h	/^typedef struct fix_event_t {$/;"	s
+fix_event_t	src/FixEvent.h	/^} fix_event_t;$/;"	t	typeref:struct:fix_event_t
+fromAdmin	examples/acceptor.js	/^    fromAdmin: function (message, sessionID) {$/;"	M
+fromAdmin	examples/initiator.js	/^  fromAdmin: function(message, sessionID) {$/;"	M
+fromAdmin	src/FixApplication.cpp	/^void FixApplication::fromAdmin( const FIX::Message& message, const FIX::SessionID& sessionID )$/;"	f	class:FixApplication
+fromApp	examples/acceptor.js	/^    fromApp: function (message, sessionID) {$/;"	M
+fromApp	examples/initiator.js	/^  fromApp: function(message, sessionID) {$/;"	M
+fromApp	src/FixApplication.cpp	/^void FixApplication::fromApp( const FIX::Message& message, const FIX::SessionID& sessionID )$/;"	f	class:FixApplication
+front	quickfix/spec/Aggregator.rb	/^  def front$/;"	f	class:Aggregator
+g_Ctor	src/FixSession.cpp	/^Nan::Persistent<Function> g_Ctor;$/;"	v
+getFields	quickfix/spec/Aggregator.rb	/^  def getFields$/;"	f	class:Aggregator
+getInstance	src/Dispatcher.h	/^    static Dispatcher& getInstance() {$/;"	f	class:Dispatcher
+getIsFinished	src/FixLoginResponse.cpp	/^bool FixLoginResponse::getIsFinished() {$/;"	f	class:FixLoginResponse
+getIsLoggedOn	src/FixLoginResponse.cpp	/^bool FixLoginResponse::getIsLoggedOn() {$/;"	f	class:FixLoginResponse
+getLogon	src/FixLoginProvider.cpp	/^Nan::Callback* FixLoginProvider::getLogon() {$/;"	f	class:FixLoginProvider
+getMsgToType	quickfix/spec/Aggregator.rb	/^  def getMsgToType$/;"	f	class:Aggregator
+groupEnd	quickfix/spec/Aggregator.rb	/^  def groupEnd$/;"	f	class:Aggregator
+groupStart	quickfix/spec/Aggregator.rb	/^  def groupStart(name, number, delim, order)$/;"	f	class:Aggregator
+headerEnd	quickfix/spec/Aggregator.rb	/^  def headerEnd$/;"	f	class:Aggregator
+headerStart	quickfix/spec/Aggregator.rb	/^  def headerStart$/;"	f	class:Aggregator
+inherits	examples/acceptor.js	/^function inherits(target, source) {$/;"	F
+inherits	examples/initiator.js	/^function inherits (target, source) {$/;"	F
+initialize	quickfix/spec/Aggregator.rb	/^  def initialize$/;"	f	class:Aggregator
+initiator	examples/initiator.js	/^var initiator = quickfix.initiator;$/;"	V
+initiator	src/FixInitiatorStartWorker.h	/^		FIX::Initiator* initiator;$/;"	m	class:FixInitiatorStartWorker
+initiator	src/FixInitiatorStopWorker.h	/^		FIX::Initiator* initiator;$/;"	m	class:FixInitiatorStopWorker
+isFinished	src/FixLoginResponse.h	/^	bool isFinished = false;$/;"	m	class:FixLoginResponse
+isLoggedOn	src/FixLoginResponse.h	/^	bool isLoggedOn = false;$/;"	m	class:FixLoginResponse
+js2Fix	src/FixMessageUtil.h	/^	static void js2Fix(FIX::Message* message, Local<v8::Object> msg) {$/;"	f	class:FixMessageUtil
+jsToSessionId	src/FixMessageUtil.h	/^	static FIX::SessionID jsToSessionId(Local<v8::Object> sessionId) {$/;"	f	class:FixMessageUtil
+libFileName	scripts/npm-run/postinstall.js	/^    libFileName = `libquickfix.${libVersion}.dylib`;$/;"	P
+libFileName	scripts/npm-run/postinstall.js	/^    libFileName = `libquickfix.so.${libVersion}`;$/;"	P
+libVersion	scripts/npm-run/postinstall.js	/^const libVersion = '17';$/;"	V
+libfs	scripts/npm-run/postinstall.js	/^const libfs = require('fs');$/;"	V
+libpath	index.js	/^const libpath = require('path');$/;"	V
+libpath	scripts/npm-run/postinstall.js	/^const libpath = require('path');$/;"	V
+listener	src/Dispatcher.h	/^    static void listener(uv_async_t* handle, int status) {$/;"	f	class:Dispatcher
+logon	src/FixEvent.h	/^	Nan::Callback* logon = NULL;$/;"	m	struct:fix_event_t
+logon	src/FixLoginProvider.h	/^		Nan::Callback* logon;$/;"	m	class:FixLoginProvider
+logonProvider	examples/acceptor.js	/^    logonProvider: logonProvider,$/;"	P
+logonResponse	src/FixEvent.h	/^	FixLoginResponse* logonResponse;$/;"	m	struct:fix_event_t
+mAcceptor	src/FixAcceptor.h	/^		FIX::Acceptor* mAcceptor;$/;"	m	class:FixAcceptor
+mCallbackRegistry	src/FixApplication.h	/^		std::unordered_set<std::string>* mCallbackRegistry;$/;"	m	class:FixApplication
+mCallbackRegistry	src/FixConnection.h	/^	std::unordered_set<std::string> mCallbackRegistry;$/;"	m	class:FixConnection
+mCallbacks	src/FixApplication.h	/^		Nan::Persistent<v8::Object>* mCallbacks;$/;"	m	class:FixApplication
+mCallbacks	src/FixConnection.h	/^	Nan::Persistent<v8::Object> mCallbacks;$/;"	m	class:FixConnection
+mCredentials	src/FixApplication.h	/^		fix_credentials* mCredentials = NULL;$/;"	m	class:FixApplication
+mFixApplication	src/FixConnection.h	/^	FixApplication* mFixApplication;$/;"	m	class:FixConnection
+mFixLoginProvider	src/FixAcceptor.h	/^		FixLoginProvider* mFixLoginProvider;$/;"	m	class:FixAcceptor
+mInitiator	src/FixInitiator.h	/^  FIX::Initiator* mInitiator;$/;"	m	class:FixInitiator
+mLogFactory	src/FixConnection.h	/^	FIX::LogFactory* mLogFactory;$/;"	m	class:FixConnection
+mLoginProvider	src/FixApplication.h	/^		FixLoginProvider* mLoginProvider = NULL;$/;"	m	class:FixApplication
+mSession	src/FixSession.h	/^	FIX::Session* mSession;$/;"	m	class:FixSession
+mSettings	src/FixConnection.h	/^	FIX::SessionSettings mSettings;$/;"	m	class:FixConnection
+mStoreFactory	src/FixConnection.h	/^	FIX::MessageStoreFactory* mStoreFactory;$/;"	m	class:FixConnection
+message	src/FixEvent.h	/^	const FIX::Message* message = NULL;$/;"	m	struct:fix_event_t
+message	src/FixSendWorker.h	/^		FIX::Message* message;$/;"	m	class:FixSendWorker
+messageEnd	quickfix/spec/Aggregator.rb	/^  def messageEnd$/;"	f	class:Aggregator
+messageStart	quickfix/spec/Aggregator.rb	/^  def messageStart(name, msgtype, required)$/;"	f	class:Aggregator
+onCreate	examples/acceptor.js	/^    onCreate: function (sessionID) {$/;"	M
+onCreate	examples/initiator.js	/^  onCreate: function(sessionID) {$/;"	M
+onCreate	src/FixApplication.cpp	/^void FixApplication::onCreate( const FIX::SessionID& sessionID )$/;"	f	class:FixApplication
+onLogon	examples/acceptor.js	/^    onLogon: function (sessionID) {$/;"	M
+onLogon	examples/initiator.js	/^  onLogon: function(sessionID) {$/;"	M
+onLogon	src/FixApplication.cpp	/^void FixApplication::onLogon( const FIX::SessionID& sessionID )$/;"	f	class:FixApplication
+onLogonAttempt	examples/acceptor.js	/^    onLogonAttempt: function (message, sessionID) {$/;"	M
+onLogonAttempt	examples/initiator.js	/^  onLogonAttempt: function(message, sessionID) {$/;"	M
+onLogout	examples/acceptor.js	/^    onLogout: function (sessionID) {$/;"	M
+onLogout	examples/initiator.js	/^  onLogout: function(sessionID) {$/;"	M
+onLogout	src/FixApplication.cpp	/^void FixApplication::onLogout( const FIX::SessionID& sessionID )$/;"	f	class:FixApplication
+password	examples/initiator.js	/^    password: "PASSWORD"$/;"	P
+password	src/FixCredentials.h	/^	std::string password;$/;"	m	struct:__anon1
+path	examples/acceptor.js	/^var path = require('path');$/;"	V
+path	examples/initiator.js	/^var path = require('path');$/;"	V
+printStats	examples/common.js	/^  printStats: printStats$/;"	P
+printStats	examples/common.js	/^function printStats(fixentity){$/;"	F
+projectDirPath	scripts/npm-run/postinstall.js	/^const projectDirPath = libpath.resolve(__dirname, '..\/..');$/;"	V
+propertiesFile	examples/acceptor.js	/^    propertiesFile: path.join(__dirname, 'acceptor.properties')$/;"	P
+propertiesFile	examples/initiator.js	/^  propertiesFile: path.join(__dirname, "initiator.properties")$/;"	P
+quickfix	examples/acceptor.js	/^var quickfix = require('..\/index');$/;"	V
+quickfix	examples/initiator.js	/^var quickfix = require('..\/index');$/;"	V
+sendAsync	src/FixAcceptor.cpp	/^void FixAcceptor::sendAsync(const Nan::FunctionCallbackInfo<v8::Value>& info, FIX::Message* fixMessage) {$/;"	f	class:FixAcceptor
+sendAsync	src/FixInitiator.cpp	/^void FixInitiator::sendAsync(const Nan::FunctionCallbackInfo<v8::Value>& info, FIX::Message* fixMessage) {$/;"	f	class:FixInitiator
+senderSeqNum	examples/common.js	/^    senderSeqNum: sess.senderSeqNum,$/;"	P
+sess	examples/common.js	/^  var sess = fixentity.getSession(sessionID);$/;"	V
+sess	examples/common.js	/^  var sess = fixentity.getSession(sessionId);$/;"	V
+session	src/FixSession.cpp	/^		FIX::Session* session;$/;"	m	class:FixSessionAsyncWorker	file:
+sessionID	examples/common.js	/^    sessionID: sessionID,$/;"	P
+sessionId	src/FixEvent.h	/^	const FIX::SessionID* sessionId;$/;"	m	struct:fix_event_t
+sessionIdToJs	src/FixMessageUtil.h	/^	static Local<Value> sessionIdToJs(const FIX::SessionID* sessionId) {$/;"	f	class:FixMessageUtil
+sessions	examples/common.js	/^  var sessions = fixentity.getSessions();$/;"	V
+setCallbackRegistry	src/FixApplication.cpp	/^void FixApplication::setCallbackRegistry(std::unordered_set<std::string>* callbackRegistry) {$/;"	f	class:FixApplication
+setCallbacks	src/FixApplication.cpp	/^void FixApplication::setCallbacks(Nan::Persistent<v8::Object>* callbacks) {$/;"	f	class:FixApplication
+setCredentials	src/FixApplication.cpp	/^void FixApplication::setCredentials(fix_credentials* credentials) {$/;"	f	class:FixApplication
+setIsFinished	src/FixLoginResponse.cpp	/^void FixLoginResponse::setIsFinished(bool finished) {$/;"	f	class:FixLoginResponse
+setIsLoggedOn	src/FixLoginResponse.cpp	/^void FixLoginResponse::setIsLoggedOn(bool loggedOn) {$/;"	f	class:FixLoginResponse
+setLogonProvider	src/FixApplication.cpp	/^void FixApplication::setLogonProvider(FixLoginProvider* loginProvider) {$/;"	f	class:FixApplication
+setSession	src/FixSession.cpp	/^void FixSession::setSession(FIX::Session* session) {$/;"	f	class:FixSession
+setup	src/FixConnection.cpp	/^void FixConnection::setup(FIX::SessionSettings settings, std::string storeFactory) {$/;"	f	class:FixConnection
+ssl	examples/initiator.js	/^  ssl : true,$/;"	P
+stats	examples/common.js	/^  stats: stats,$/;"	P
+stats	examples/common.js	/^function stats(fixentity, sessionID, message) {$/;"	F
+targetLibDirPath	scripts/npm-run/postinstall.js	/^    targetLibDirPath = '\/lib64';$/;"	P
+targetLibDirPath	scripts/npm-run/postinstall.js	/^    targetLibDirPath = '\/usr\/local\/lib';$/;"	P
+targetSeqNum	examples/common.js	/^    targetSeqNum: sess.targetSeqNum$/;"	P
+toAdmin	examples/acceptor.js	/^    toAdmin: function (message, sessionID) {$/;"	M
+toAdmin	examples/initiator.js	/^  toAdmin: function(message, sessionID) {$/;"	M
+toAdmin	src/FixApplication.cpp	/^void FixApplication::toAdmin( FIX::Message& message, const FIX::SessionID& sessionID )$/;"	f	class:FixApplication
+toApp	src/FixApplication.cpp	/^void FixApplication::toApp( FIX::Message& message, const FIX::SessionID& sessionID )$/;"	f	class:FixApplication
+trailerEnd	quickfix/spec/Aggregator.rb	/^  def trailerEnd$/;"	f	class:Aggregator
+trailerStart	quickfix/spec/Aggregator.rb	/^  def trailerStart$/;"	f	class:Aggregator
+username	examples/initiator.js	/^    username: "USERNAME",$/;"	P
+username	src/FixCredentials.h	/^	std::string username;$/;"	m	struct:__anon1
+watcher	src/Dispatcher.h	/^    uv_async_t watcher;$/;"	m	class:Dispatcher
+wrapFixLoginResponse	src/FixLoginResponse.cpp	/^Handle<Object> FixLoginResponse::wrapFixLoginResponse(FixLoginResponse* fixLoginResponse) {$/;"	f	class:FixLoginResponse
+wrapFixSession	src/FixSession.cpp	/^Handle<Object> FixSession::wrapFixSession(FIX::Session *session) {$/;"	f	class:FixSession
+~Dispatcher	src/Dispatcher.h	/^    ~Dispatcher() {$/;"	f	class:Dispatcher
+~FixAcceptor	src/FixAcceptor.cpp	/^FixAcceptor::~FixAcceptor() {$/;"	f	class:FixAcceptor
+~FixAcceptorStartWorker	src/FixAcceptorStartWorker.h	/^		~FixAcceptorStartWorker() {}$/;"	f	class:FixAcceptorStartWorker
+~FixAcceptorStopWorker	src/FixAcceptorStopWorker.h	/^		~FixAcceptorStopWorker() {}$/;"	f	class:FixAcceptorStopWorker
+~FixApplication	src/FixApplication.cpp	/^FixApplication::~FixApplication()$/;"	f	class:FixApplication
+~FixConnection	src/FixConnection.cpp	/^FixConnection::~FixConnection() {$/;"	f	class:FixConnection
+~FixInitiator	src/FixInitiator.cpp	/^FixInitiator::~FixInitiator() {$/;"	f	class:FixInitiator
+~FixInitiatorStartWorker	src/FixInitiatorStartWorker.h	/^		~FixInitiatorStartWorker() {}$/;"	f	class:FixInitiatorStartWorker
+~FixInitiatorStopWorker	src/FixInitiatorStopWorker.h	/^		~FixInitiatorStopWorker() {}$/;"	f	class:FixInitiatorStopWorker
+~FixLoginProvider	src/FixLoginProvider.cpp	/^FixLoginProvider::~FixLoginProvider() {$/;"	f	class:FixLoginProvider
+~FixLoginResponse	src/FixLoginResponse.cpp	/^FixLoginResponse::~FixLoginResponse() {$/;"	f	class:FixLoginResponse
+~FixSendWorker	src/FixSendWorker.h	/^		~FixSendWorker() {$/;"	f	class:FixSendWorker
+~FixSession	src/FixSession.cpp	/^FixSession::~FixSession() {$/;"	f	class:FixSession
+~FixSessionAsyncWorker	src/FixSession.cpp	/^		~FixSessionAsyncWorker() {}$/;"	f	class:FixSessionAsyncWorker
+~FixSessionDisconnectWorker	src/FixSession.cpp	/^		~FixSessionDisconnectWorker() {}$/;"	f	class:FixSessionDisconnectWorker
+~FixSessionLogonWorker	src/FixSession.cpp	/^		~FixSessionLogonWorker() {}$/;"	f	class:FixSessionLogonWorker
+~FixSessionLogoutWorker	src/FixSession.cpp	/^		~FixSessionLogoutWorker() {}$/;"	f	class:FixSessionLogoutWorker
+~FixSessionRefreshWorker	src/FixSession.cpp	/^		~FixSessionRefreshWorker() {}$/;"	f	class:FixSessionRefreshWorker
+~FixSessionResetWorker	src/FixSession.cpp	/^		~FixSessionResetWorker() {}$/;"	f	class:FixSessionResetWorker
