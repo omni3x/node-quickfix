@@ -21,25 +21,26 @@ using namespace node;
 // here, so everything we need for input and output
 // should go on `this`.
 void FixSendWorker::Execute () {
-	try {
-		FIX::Session::sendToTarget(*message);
-	} catch(FIX::SessionNotFound& e) {
-		std::cout << "*** Session not found!" << std::endl;
-	}
+  try {
+    FIX::Session::sendToTarget(*message);
+  } catch(FIX::SessionNotFound& e) {
+    std::cout << "*** Session not found!" << std::endl;
+    this->SetErrorMessage("Failed to send FIX Message");
+  }
 }
 
 // Executed when the async work is complete
 // this function will be run inside the main event loop
 // so it is safe to use V8 again
 void FixSendWorker::HandleOKCallback () {
-	Nan::HandleScope scope;
+  Nan::HandleScope scope;
 
     v8::Local<v8::Function> fn = callback->GetFunction();
-	if(!(fn->IsUndefined() || fn->IsNull())) {
-		Local<Value> argv[] = {
-			Nan::Null()
-		};
+  if(!(fn->IsUndefined() || fn->IsNull())) {
+    Local<Value> argv[] = {
+      Nan::Null()
+    };
 
-		callback->Call(1, argv);
-	}
+    callback->Call(1, argv);
+  }
 }
