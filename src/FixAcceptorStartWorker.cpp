@@ -20,25 +20,26 @@ using namespace node;
 // here, so everything we need for input and output
 // should go on `this`.
 void FixAcceptorStartWorker::Execute () {
-	try {
-		acceptor->start();
-	} catch(FIX::ConfigError& e) {
-		//handle this exception
-	}
+  try {
+    acceptor->start();
+  } catch(FIX::ConfigError& e) {
+    SetErrorMessage("Failed to start FIX Acceptor");
+    //handle this exception
+  }
 }
 
 // Executed when the async work is complete
 // this function will be run inside the main event loop
 // so it is safe to use V8 again
 void FixAcceptorStartWorker::HandleOKCallback () {
-	Nan::HandleScope scope;
+  Nan::HandleScope scope;
 
     v8::Local<v8::Function> fn = callback->GetFunction();
-	if(!(fn->IsUndefined() || fn->IsNull())) {
-		Local<Value> argv[] = {
-			Nan::Null()
-		};
+  if(!(fn->IsUndefined() || fn->IsNull())) {
+    Local<Value> argv[] = {
+      Nan::Null()
+    };
 
-		callback->Call(1, argv);
-	}
+    callback->Call(1, argv);
+  }
 }
