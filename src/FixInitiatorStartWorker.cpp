@@ -23,6 +23,7 @@ void FixInitiatorStartWorker::Execute () {
 	try {
 		initiator->start();
 	} catch(FIX::ConfigError& e) {
+    this->SetErrorMessage("Failed to start FIX Initiator");
 		//handle this exception
 	}
 }

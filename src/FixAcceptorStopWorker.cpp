@@ -23,6 +23,7 @@ void FixAcceptorStopWorker::Execute () {
 	try {
 		acceptor->stop();
 	} catch(FIX::ConfigError& e) {
+    this->SetErrorMessage("Failed to stop FIX Acceptor");
 		//handle this exception
 	}
 }

@@ -24,7 +24,8 @@ void FixSendWorker::Execute () {
 	try {
 		FIX::Session::sendToTarget(*message);
 	} catch(FIX::SessionNotFound& e) {
-		std::cout << "*** Session not found!" << std::endl;
+    std::cout << "*** Session not found!" << std::endl;
+    this->SetErrorMessage("Failed to send FIX Message");
 	}
 }
 

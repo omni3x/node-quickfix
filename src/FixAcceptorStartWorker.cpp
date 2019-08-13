@@ -23,6 +23,7 @@ void FixAcceptorStartWorker::Execute () {
 	try {
 		acceptor->start();
 	} catch(FIX::ConfigError& e) {
+    this->SetErrorMessage("Failed to start FIX Acceptor");
 		//handle this exception
 	}
 }
