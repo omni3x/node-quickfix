@@ -1,1 +1,8 @@
 .git
+Dockerfile
+LICENSE
+README.md
+build/
+data/
+log/
+node_modules/
